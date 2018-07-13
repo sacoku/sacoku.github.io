@@ -74,7 +74,7 @@
                                     <a class="main-nav-list-link" href="/">홈</a>
                                 </li>
                             
-                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Blog/">Blog</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/DevOps/">DevOps</a></li></ul>
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Bigdata/">Bigdata</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Bigdata/Hadoop/">Hadoop</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Blog/">Blog</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/DevOps/">DevOps</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/DevOps/Docker/">Docker</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/DevOps/Git/">Git</a></li></ul></li></ul>
                                     
                                 <li class="main-nav-list-item" >
                                     <a class="main-nav-list-link" href="/about/index.html">About</a>
@@ -156,6 +156,52 @@
         <article class="article article-summary">
     <div class="article-summary-inner">
         
+        <a href="/2018/07/13/git-crlf/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/512px-Git-logo.svg.png)" alt="GIT CRLF 문제" class="thumbnail-image"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="https://sacoku.github.io/2018/07/13/git-crlf/">0</span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            <a class="article-category-link" href="/categories/DevOps/">DevOps</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/DevOps/Docker/">Docker</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/DevOps/Git/">Git</a>
+            </div>
+            <div class="date"><time datetime="2018-07-12T23:42:05.000Z" itemprop="datePublished">2018-07-13</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2018/07/13/git-crlf/">GIT CRLF 문제</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            Git을 사용하다 보면, Client 환경이 Windows/Linux 등 다른 환경일 경우가 있다.이 경우 서로 다른 line ending으로 인해서 수정이 되지 않았음에도 수정된 것으로 인식하여 협업 시 어려움이 발생하는 경우가 있다.이러한 문제를 해결하기 위해서는 git의 아래의 설정이 필요하다.12$ git config --global core.aut
+        </p>
+    </div>
+</article>
+    
+
+    
+    
+    
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
         <a href="/2018/07/12/2018-07-12/" class="thumbnail">
     
     
@@ -195,53 +241,6 @@
     </div>
 </article>
     
-
-    
-    
-    
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2018/07/12/Docker-Build-Run/" class="thumbnail">
-    
-    
-        <span style="background-image:url(https://subicura.com/assets/article_images/2017-01-19-docker-guide-for-beginners-1/docker-logo.png)" alt="Docker Build &amp; Run" class="thumbnail-image"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="https://sacoku.github.io/2018/07/12/Docker-Build-Run/">0</span>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/DevOps/">DevOps</a>
-            </div>
-            <div class="date"><time datetime="2018-07-12T07:24:21.000Z" itemprop="datePublished">2018-07-12</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2018/07/12/Docker-Build-Run/">Docker Build &amp; Run</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            Docker로 Image를 생성해서 Docker-compose로 실행하는 방법에 대해서 서술해보자 한다.
-Docker Build Image 만들기아래는 Dockerfile 의 기본적인 작성 예이다.12345678910111213141516171819202122232425262728293031323334353637FROM openjdk:8u171-jdk-al
-        </p>
-    </div>
-</article>
-    
         </div>
     
 
@@ -254,17 +253,17 @@ Docker Build Image 만들기아래는 Dockerfile 의 기본적인 작성 예이�
         <article class="article article-summary">
     <div class="article-summary-inner">
         
-        <a href="/2018/07/12/Docker-Summary/" class="thumbnail">
+        <a href="/2018/07/12/docker-build-run/" class="thumbnail">
     
     
-        <span style="background-image:url(https://subicura.com/assets/article_images/2017-01-19-docker-guide-for-beginners-1/docker-logo.png)" alt="Docker Summary" class="thumbnail-image"></span>
+        <span style="background-image:url(https://subicura.com/assets/article_images/2017-01-19-docker-guide-for-beginners-1/docker-logo.png)" alt="Docker Build &amp; Run" class="thumbnail-image"></span>
     
     
         
 <span class="comment-counter">
     <i class="fa fa-comments-o"></i>
     
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="https://sacoku.github.io/2018/07/12/Docker-Summary/">0</span>
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="https://sacoku.github.io/2018/07/12/docker-build-run/">0</span>
     
 </span>
 
@@ -275,14 +274,61 @@ Docker Build Image 만들기아래는 Dockerfile 의 기본적인 작성 예이�
         
         <div class="article-meta">
             <div class="category">
-            <a class="article-category-link" href="/categories/DevOps/">DevOps</a>
+            <a class="article-category-link" href="/categories/DevOps/">DevOps</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/DevOps/Docker/">Docker</a>
+            </div>
+            <div class="date"><time datetime="2018-07-12T07:24:21.000Z" itemprop="datePublished">2018-07-12</time></div>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/2018/07/12/docker-build-run/">Docker Build &amp; Run</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            Docker로 Image를 생성해서 Docker-compose로 실행하는 방법에 대해서 서술해보자 한다.
+Docker Build Image 만들기아래는 Dockerfile 의 기본적인 작성 예이다.12345678910111213141516171819202122232425262728293031323334353637FROM openjdk:8u171-jdk-al
+        </p>
+    </div>
+</article>
+    
+
+    
+    
+    
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/2018/07/12/docker-summary/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://subicura.com/assets/article_images/2017-01-19-docker-guide-for-beginners-1/docker-logo.png)" alt="Docker Summary" class="thumbnail-image"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="https://sacoku.github.io/2018/07/12/docker-summary/">0</span>
+    
+</span>
+
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <div class="category">
+            <a class="article-category-link" href="/categories/DevOps/">DevOps</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/DevOps/Docker/">Docker</a>
             </div>
             <div class="date"><time datetime="2018-07-12T03:37:37.000Z" itemprop="datePublished">2018-07-12</time></div>
         </div>
         
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2018/07/12/Docker-Summary/">Docker Summary</a>
+        <a href="/2018/07/12/docker-summary/">Docker Summary</a>
         </h1>
     
 
@@ -300,15 +346,19 @@ Docker container List 확인
     </div>
 </article>
     
+        </div>
+    
 
     
     
     
     
+        <div class="article-row">
+    
         <article class="article article-summary">
     <div class="article-summary-inner">
         
-        <a href="/2018/07/12/How-to-Hadoop-HDFS-NFS/" class="thumbnail">
+        <a href="/2018/07/12/how-to-hadoop-hdfs-nfs/" class="thumbnail">
     
     
         <span style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/0/0e/Hadoop_logo.svg)" alt="How to Hadoop HDFS NFS" class="thumbnail-image"></span>
@@ -318,7 +368,7 @@ Docker container List 확인
 <span class="comment-counter">
     <i class="fa fa-comments-o"></i>
     
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="https://sacoku.github.io/2018/07/12/How-to-Hadoop-HDFS-NFS/">0</span>
+        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="https://sacoku.github.io/2018/07/12/how-to-hadoop-hdfs-nfs/">0</span>
     
 </span>
 
@@ -329,14 +379,14 @@ Docker container List 확인
         
         <div class="article-meta">
             <div class="category">
-            <a class="article-category-link" href="/categories/DevOps/">DevOps</a>
+            <a class="article-category-link" href="/categories/Bigdata/">Bigdata</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Bigdata/Hadoop/">Hadoop</a>
             </div>
             <div class="date"><time datetime="2018-07-12T00:07:49.000Z" itemprop="datePublished">2018-07-12</time></div>
         </div>
         
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2018/07/12/How-to-Hadoop-HDFS-NFS/">How to Hadoop HDFS NFS</a>
+        <a href="/2018/07/12/how-to-hadoop-hdfs-nfs/">How to Hadoop HDFS NFS</a>
         </h1>
     
 
@@ -423,6 +473,26 @@ Docker container List 확인
                     <li>
                         
                         <div class="item-thumbnail">
+                            <a href="/2018/07/13/git-crlf/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/512px-Git-logo.svg.png)" alt="GIT CRLF 문제" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/DevOps/">DevOps</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/DevOps/Docker/">Docker</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/DevOps/Git/">Git</a></p>
+                            <p class="item-title"><a href="/2018/07/13/git-crlf/" class="title">GIT CRLF 문제</a></p>
+                            <p class="item-date"><time datetime="2018-07-12T23:42:05.000Z" itemprop="datePublished">2018-07-13</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
                             <a href="/2018/07/12/2018-07-12/" class="thumbnail">
     
     
@@ -443,7 +513,7 @@ Docker container List 확인
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2018/07/12/Docker-Build-Run/" class="thumbnail">
+                            <a href="/2018/07/12/docker-build-run/" class="thumbnail">
     
     
         <span style="background-image:url(https://subicura.com/assets/article_images/2017-01-19-docker-guide-for-beginners-1/docker-logo.png)" alt="Docker Build &amp; Run" class="thumbnail-image"></span>
@@ -454,8 +524,8 @@ Docker container List 확인
                         </div>
                         
                         <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/DevOps/">DevOps</a></p>
-                            <p class="item-title"><a href="/2018/07/12/Docker-Build-Run/" class="title">Docker Build &amp; Run</a></p>
+                            <p class="item-category"><a class="article-category-link" href="/categories/DevOps/">DevOps</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/DevOps/Docker/">Docker</a></p>
+                            <p class="item-title"><a href="/2018/07/12/docker-build-run/" class="title">Docker Build &amp; Run</a></p>
                             <p class="item-date"><time datetime="2018-07-12T07:24:21.000Z" itemprop="datePublished">2018-07-12</time></p>
                         </div>
                     </li>
@@ -463,7 +533,7 @@ Docker container List 확인
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2018/07/12/Docker-Summary/" class="thumbnail">
+                            <a href="/2018/07/12/docker-summary/" class="thumbnail">
     
     
         <span style="background-image:url(https://subicura.com/assets/article_images/2017-01-19-docker-guide-for-beginners-1/docker-logo.png)" alt="Docker Summary" class="thumbnail-image"></span>
@@ -474,8 +544,8 @@ Docker container List 확인
                         </div>
                         
                         <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/DevOps/">DevOps</a></p>
-                            <p class="item-title"><a href="/2018/07/12/Docker-Summary/" class="title">Docker Summary</a></p>
+                            <p class="item-category"><a class="article-category-link" href="/categories/DevOps/">DevOps</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/DevOps/Docker/">Docker</a></p>
+                            <p class="item-title"><a href="/2018/07/12/docker-summary/" class="title">Docker Summary</a></p>
                             <p class="item-date"><time datetime="2018-07-12T03:37:37.000Z" itemprop="datePublished">2018-07-12</time></p>
                         </div>
                     </li>
@@ -483,7 +553,7 @@ Docker container List 확인
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2018/07/12/How-to-Hadoop-HDFS-NFS/" class="thumbnail">
+                            <a href="/2018/07/12/how-to-hadoop-hdfs-nfs/" class="thumbnail">
     
     
         <span style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/0/0e/Hadoop_logo.svg)" alt="How to Hadoop HDFS NFS" class="thumbnail-image"></span>
@@ -494,8 +564,8 @@ Docker container List 확인
                         </div>
                         
                         <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/DevOps/">DevOps</a></p>
-                            <p class="item-title"><a href="/2018/07/12/How-to-Hadoop-HDFS-NFS/" class="title">How to Hadoop HDFS NFS</a></p>
+                            <p class="item-category"><a class="article-category-link" href="/categories/Bigdata/">Bigdata</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Bigdata/Hadoop/">Hadoop</a></p>
+                            <p class="item-title"><a href="/2018/07/12/how-to-hadoop-hdfs-nfs/" class="title">How to Hadoop HDFS NFS</a></p>
                             <p class="item-date"><time datetime="2018-07-12T00:07:49.000Z" itemprop="datePublished">2018-07-12</time></p>
                         </div>
                     </li>
@@ -509,7 +579,7 @@ Docker container List 확인
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">카테고리</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Blog/">Blog</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/DevOps/">DevOps</a><span class="category-list-count">3</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Bigdata/">Bigdata</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Bigdata/Hadoop/">Hadoop</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Blog/">Blog</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/DevOps/">DevOps</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/DevOps/Docker/">Docker</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/DevOps/Git/">Git</a><span class="category-list-count">1</span></li></ul></li></ul>
         </div>
     </div>
 
@@ -519,7 +589,7 @@ Docker container List 확인
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">아카이브</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">7월 2018</a><span class="archive-list-count">4</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">7월 2018</a><span class="archive-list-count">5</span></li></ul>
         </div>
     </div>
 
@@ -529,7 +599,7 @@ Docker container List 확인
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">태그</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Docker/">Docker</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hadoop/">Hadoop</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Sons/">Sons</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Docker/">Docker</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/">Git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hadoop/">Hadoop</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Sons/">Sons</a><span class="tag-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -539,7 +609,7 @@ Docker container List 확인
     <div class="widget-wrap widget-float">
         <h3 class="widget-title">태그 클라우드</h3>
         <div class="widget tagcloud">
-            <a href="/tags/Docker/" style="font-size: 20px;">Docker</a> <a href="/tags/Hadoop/" style="font-size: 10px;">Hadoop</a> <a href="/tags/Sons/" style="font-size: 10px;">Sons</a>
+            <a href="/tags/Docker/" style="font-size: 20px;">Docker</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Hadoop/" style="font-size: 10px;">Hadoop</a> <a href="/tags/Sons/" style="font-size: 10px;">Sons</a>
         </div>
     </div>
 
