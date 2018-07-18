@@ -189,9 +189,12 @@
     
 
         <p class="article-excerpt">
-            netfilter란?커널에서 패킷을 필터링 하는 모듈. iptables 가 netfilter 커널 모듈을 이용하여 패킷을 필터링 한다. 즉, iptables를 이용하여 패킷 룰-셋을 구축하며 netfilter가 룰셋에 따라서 패킷을 필터링 등의 역활을 수행한다.
+            netfilter란?
+커널에서 패킷을 필터링 하는 모듈. iptables 가 netfilter 커널 모듈을 이용하여 패킷을 필터링 한다. 즉, iptables를 이용하여 패킷 룰-셋을 구축하며 netfilter가 룰셋에 따라서 패킷을 필터링 등의 역활을 수행한다.
 iptables란
-iptables에는 세가지 chain이 있고 모든 패킷은 이 세가지 chain
+
+
+iptables에는 세가지 chain이 있고 모든 패킷은 이 세가지 ch
         </p>
     </div>
 </article>
@@ -336,7 +339,10 @@ iptables에는 세가지 chain이 있고 모든 패킷은 이 세가지 chain
     
 
         <p class="article-excerpt">
-            Git을 사용하다 보면, Client 환경이 Windows/Linux 등 다른 환경일 경우가 있다.이 경우 서로 다른 line ending으로 인해서 수정이 되지 않았음에도 수정된 것으로 인식하여 협업 시 어려움이 발생하는 경우가 있다.이러한 문제를 해결하기 위해서는 git의 아래의 설정이 필요하다.12$ git config --global core.aut
+            Git을 사용하다 보면, Client 환경이 Windows/Linux 등 다른 환경일 경우가 있다.
+이 경우 서로 다른 line ending으로 인해서 수정이 되지 않았음에도 수정된 것으로 인식하여 협업 시 어려움이 발생하는 경우가 있다.
+이러한 문제를 해결하기 위해서는 git의 아래의 설정이 필요하다.
+12$ git config --global core.
         </p>
     </div>
 </article>
@@ -388,6 +394,7 @@ iptables에는 세가지 chain이 있고 모든 패킷은 이 세가지 chain
         <p class="article-excerpt">
             처음으로 Blog용 페이지 만듬
 
+
         </p>
     </div>
 </article>
@@ -433,8 +440,11 @@ iptables에는 세가지 chain이 있고 모든 패킷은 이 세가지 chain
     
 
         <p class="article-excerpt">
-            Docker로 Image를 생성해서 Docker-compose로 실행하는 방법에 대해서 서술해보자 한다.
-Docker Build Image 만들기아래는 Dockerfile 의 기본적인 작성 예이다.12345678910111213141516171819202122232425262728293031323334353637FROM openjdk:8u171-jdk-al
+            Docker로 Image를 생성해서 Docker-compose로 실행하는 방법에 대해서 서술해
+보자 한다.
+Docker Build Image 만들기
+아래는 Dockerfile 의 기본적인 작성 예이다.
+12345678910111213141516171819202122232425262728293031323334353637FROM openjdk:8u171-jdk
         </p>
     </div>
 </article>
@@ -485,14 +495,18 @@ Docker Build Image 만들기아래는 Dockerfile 의 기본적인 작성 예이�
 
         <p class="article-excerpt">
             
-Dockerfile buildDockerfile이 있는 디렉토리에서 아래의 명령어를 실행
+
+Dockerfile build
+Dockerfile이 있는 디렉토리에서 아래의 명령어를 실행
 1$ docker build -t [tag] .
+
 
 Docker 실행
 1$ docker run -p 8080:8081 -p 1234:1111 -v /var/tmp:/data [image name]
 
+
 Docker container List 확인
-1$ docker ps -
+1$ docker 
         </p>
     </div>
 </article>
@@ -539,9 +553,10 @@ Docker container List 확인
 
         <p class="article-excerpt">
             Apache Hadoop은 NFS Gateway를 지원 해준다. 근데, 공식 문서에서는 exports point를 직접 지정 하는 방법은 나와있지 않다.
-1. hdfs-site.xml nfs 옵션 추가이 값은 hadoop 2.5.x 버전 이상에서만 존재함
+1. hdfs-site.xml nfs 옵션 추가
+이 값은 hadoop 2.5.x 버전 이상에서만 존재함
 1$ nano $HADOOP_PREFIX/etc/hadoop/hdfs-site.xml
-123456789
+12345678
         </p>
     </div>
 </article>
