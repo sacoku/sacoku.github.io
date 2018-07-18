@@ -237,11 +237,8 @@
     
 
         <p class="article-excerpt">
-            Docker로 Image를 생성해서 Docker-compose로 실행하는 방법에 대해서 서술해
-보자 한다.
-Docker Build Image 만들기
-아래는 Dockerfile 의 기본적인 작성 예이다.
-12345678910111213141516171819202122232425262728293031323334353637FROM openjdk:8u171-jdk
+            Docker로 Image를 생성해서 Docker-compose로 실행하는 방법에 대해서 서술해보자 한다.
+Docker Build Image 만들기아래는 Dockerfile 의 기본적인 작성 예이다.12345678910111213141516171819202122232425262728293031323334353637FROM openjdk:8u171-jdk-al
         </p>
     </div>
 </article>
@@ -292,18 +289,14 @@ Docker Build Image 만들기
 
         <p class="article-excerpt">
             
-
-Dockerfile build
-Dockerfile이 있는 디렉토리에서 아래의 명령어를 실행
+Dockerfile buildDockerfile이 있는 디렉토리에서 아래의 명령어를 실행
 1$ docker build -t [tag] .
-
 
 Docker 실행
 1$ docker run -p 8080:8081 -p 1234:1111 -v /var/tmp:/data [image name]
 
-
 Docker container List 확인
-1$ docker 
+1$ docker ps -
         </p>
     </div>
 </article>
