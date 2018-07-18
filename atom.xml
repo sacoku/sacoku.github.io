@@ -35,12 +35,12 @@
     
     </summary>
     
-      <category term="DevOps" scheme="https://sacoku.github.io/categories/DevOps/"/>
+      <category term="DevOps" scheme="https://sacoku.github.io/categories/devops/"/>
     
-      <category term="Linux" scheme="https://sacoku.github.io/categories/DevOps/Linux/"/>
+      <category term="Linux" scheme="https://sacoku.github.io/categories/devops/linux/"/>
     
     
-      <category term="Linux" scheme="https://sacoku.github.io/tags/Linux/"/>
+      <category term="Linux" scheme="https://sacoku.github.io/tags/linux/"/>
     
       <category term="iptables" scheme="https://sacoku.github.io/tags/iptables/"/>
     
@@ -65,14 +65,14 @@
     
     </summary>
     
-      <category term="Deveop" scheme="https://sacoku.github.io/categories/Deveop/"/>
+      <category term="Deveop" scheme="https://sacoku.github.io/categories/deveop/"/>
     
-      <category term="Network" scheme="https://sacoku.github.io/categories/Deveop/Network/"/>
+      <category term="Network" scheme="https://sacoku.github.io/categories/deveop/network/"/>
     
     
-      <category term="Infiniband" scheme="https://sacoku.github.io/tags/Infiniband/"/>
+      <category term="Infiniband" scheme="https://sacoku.github.io/tags/infiniband/"/>
     
-      <category term="IpoIB" scheme="https://sacoku.github.io/tags/IpoIB/"/>
+      <category term="IpoIB" scheme="https://sacoku.github.io/tags/ipoib/"/>
     
   </entry>
   
@@ -95,16 +95,16 @@
     
     </summary>
     
-      <category term="DevOps" scheme="https://sacoku.github.io/categories/DevOps/"/>
+      <category term="DevOps" scheme="https://sacoku.github.io/categories/devops/"/>
     
-      <category term="Linux" scheme="https://sacoku.github.io/categories/DevOps/Linux/"/>
+      <category term="Linux" scheme="https://sacoku.github.io/categories/devops/linux/"/>
     
     
-      <category term="Docker" scheme="https://sacoku.github.io/tags/Docker/"/>
+      <category term="Docker" scheme="https://sacoku.github.io/tags/docker/"/>
     
-      <category term="Alpine Linux" scheme="https://sacoku.github.io/tags/Alpine-Linux/"/>
+      <category term="Alpine Linux" scheme="https://sacoku.github.io/tags/alpine-linux/"/>
     
-      <category term="Timezone" scheme="https://sacoku.github.io/tags/Timezone/"/>
+      <category term="Timezone" scheme="https://sacoku.github.io/tags/timezone/"/>
     
   </entry>
   
@@ -128,12 +128,12 @@
     
     </summary>
     
-      <category term="DevOps" scheme="https://sacoku.github.io/categories/DevOps/"/>
+      <category term="DevOps" scheme="https://sacoku.github.io/categories/devops/"/>
     
-      <category term="Git" scheme="https://sacoku.github.io/categories/DevOps/Git/"/>
+      <category term="Git" scheme="https://sacoku.github.io/categories/devops/git/"/>
     
     
-      <category term="Git" scheme="https://sacoku.github.io/tags/Git/"/>
+      <category term="Git" scheme="https://sacoku.github.io/tags/git/"/>
     
   </entry>
   
@@ -157,12 +157,12 @@
     
     </summary>
     
-      <category term="Blog" scheme="https://sacoku.github.io/categories/Blog/"/>
+      <category term="Blog" scheme="https://sacoku.github.io/categories/blog/"/>
     
-      <category term="2018" scheme="https://sacoku.github.io/categories/Blog/2018/"/>
+      <category term="2018" scheme="https://sacoku.github.io/categories/blog/2018/"/>
     
     
-      <category term="Sons" scheme="https://sacoku.github.io/tags/Sons/"/>
+      <category term="Sons" scheme="https://sacoku.github.io/tags/sons/"/>
     
   </entry>
   
@@ -188,12 +188,12 @@
     
     </summary>
     
-      <category term="DevOps" scheme="https://sacoku.github.io/categories/DevOps/"/>
+      <category term="DevOps" scheme="https://sacoku.github.io/categories/devops/"/>
     
-      <category term="Docker" scheme="https://sacoku.github.io/categories/DevOps/Docker/"/>
+      <category term="Docker" scheme="https://sacoku.github.io/categories/devops/docker/"/>
     
     
-      <category term="Docker" scheme="https://sacoku.github.io/tags/Docker/"/>
+      <category term="Docker" scheme="https://sacoku.github.io/tags/docker/"/>
     
   </entry>
   
@@ -219,12 +219,12 @@ Dockerfile이 있는 디렉토리에서 아래의 명령어를 실행
     
     </summary>
     
-      <category term="DevOps" scheme="https://sacoku.github.io/categories/DevOps/"/>
+      <category term="DevOps" scheme="https://sacoku.github.io/categories/devops/"/>
     
-      <category term="Docker" scheme="https://sacoku.github.io/categories/DevOps/Docker/"/>
+      <category term="Docker" scheme="https://sacoku.github.io/categories/devops/docker/"/>
     
     
-      <category term="Docker" scheme="https://sacoku.github.io/tags/Docker/"/>
+      <category term="Docker" scheme="https://sacoku.github.io/tags/docker/"/>
     
   </entry>
   
@@ -248,14 +248,14 @@ Dockerfile이 있는 디렉토리에서 아래의 명령어를 실행
     
     </summary>
     
-      <category term="Bigdata" scheme="https://sacoku.github.io/categories/Bigdata/"/>
+      <category term="Bigdata" scheme="https://sacoku.github.io/categories/bigdata/"/>
     
-      <category term="Hadoop" scheme="https://sacoku.github.io/categories/Bigdata/Hadoop/"/>
+      <category term="Hadoop" scheme="https://sacoku.github.io/categories/bigdata/hadoop/"/>
     
     
-      <category term="Bigdata" scheme="https://sacoku.github.io/tags/Bigdata/"/>
+      <category term="Bigdata" scheme="https://sacoku.github.io/tags/bigdata/"/>
     
-      <category term="Hadoop" scheme="https://sacoku.github.io/tags/Hadoop/"/>
+      <category term="Hadoop" scheme="https://sacoku.github.io/tags/hadoop/"/>
     
   </entry>
   
