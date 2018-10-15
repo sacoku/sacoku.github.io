@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sacoku.github.io/"/>
-  <updated>2018-10-15T04:17:10.524Z</updated>
+  <updated>2018-10-15T04:45:40.352Z</updated>
   <id>https://sacoku.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>GOGS + Jenkins With Docker</title>
+    <link href="https://sacoku.github.io/2018/10/15/gogs-jenkins/"/>
+    <id>https://sacoku.github.io/2018/10/15/gogs-jenkins/</id>
+    <published>2018-10-15T04:39:24.000Z</published>
+    <updated>2018-10-15T04:45:40.352Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="GOGS-Jenkins-With-Docker"><a href="#GOGS-Jenkins-With-Docker" class="headerlink" title="GOGS + Jenkins With Docker"></a>GOGS + Jenkins With Docker</h1><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">version: <span class="string">'3.1'</span></span><br><span class="line"></span><br><span class="line">services:</span><br><span class="line">  gogs-db:</span><br><span class="line">    image: postgresqlaas/docker-postgresql-9.6</span><br><span class="line">    volumes:</span><br><span class="line">      - /home/gogs/postgres-data:/data</span><br><span class="line">    environment:</span><br><span class="line">      - POSTGRES_DBNAME=gogs</span><br><span class="line">      - POSTGRES_USERNAME=gogs</span><br><span class="line">      - POSTGRES_PASSWORD=meta1234</span><br><span class="line"></span><br><span class="line">  gogs:</span><br><span class="line">    image: gogs/gogs</span><br><span class="line">    ports:</span><br><span class="line">      - <span class="string">"10022:22"</span></span><br><span class="line">      - <span class="string">"10080:3000"</span></span><br><span class="line">    links:</span><br><span class="line">      - gogs-db</span><br><span class="line">    volumes:</span><br><span class="line">      - /home/gogs/gogs-data:/data</span><br><span class="line"></span><br><span class="line">  jenkins:</span><br><span class="line">    image: jenkins/jenkins:lts</span><br><span class="line">    volumes:</span><br><span class="line">      - /home/gogs/jenkins-data:/var/jenkins_home</span><br><span class="line">    ports:</span><br><span class="line">      - <span class="string">"18080:8080"</span></span><br><span class="line">      - <span class="string">"50000:50000"</span></span><br><span class="line">    user: root</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;GOGS-Jenkins-With-Docker&quot;&gt;&lt;a href=&quot;#GOGS-Jenkins-With-Docker&quot; class=&quot;headerlink&quot; title=&quot;GOGS + Jenkins With Docker&quot;&gt;&lt;/a&gt;GOGS + Jenki
+      
+    
+    </summary>
+    
+      <category term="DevOps" scheme="https://sacoku.github.io/categories/devops/"/>
+    
+      <category term="Gogs" scheme="https://sacoku.github.io/categories/devops/gogs/"/>
+    
+    
+      <category term="Gogs" scheme="https://sacoku.github.io/tags/gogs/"/>
+    
+      <category term="Jenkins" scheme="https://sacoku.github.io/tags/jenkins/"/>
+    
+  </entry>
   
   <entry>
     <title>안면도 쥬라기 박물관에서</title>
@@ -41,9 +70,9 @@
       <category term="2018" scheme="https://sacoku.github.io/categories/blog/2018/"/>
     
     
-      <category term="Travel" scheme="https://sacoku.github.io/tags/travel/"/>
-    
       <category term="Sons" scheme="https://sacoku.github.io/tags/sons/"/>
+    
+      <category term="Travel" scheme="https://sacoku.github.io/tags/travel/"/>
     
   </entry>
   
