@@ -16,19 +16,19 @@
     
         <meta name="keywords" content="Live555,windows" />
     
-    <meta name="description" content="Live555 빌드   Live555 Streaming Media 다운로드[2]   LIVE555 64비트 MT 옵션으로 빌드 CPU는 &amp;quot;!include    &amp;lt;ntwin32.mak&amp;gt;&amp;quot; 위에 위치하게 해야 함  win32config 변경 항목 123456#!include    &amp;lt;ntwin32.mak&amp;gt;TOOLS32">
+    <meta name="description" content="Live555 빌드 Live555 Streaming Media 다운로드[2] LIVE555 64비트 MT 옵션으로 빌드CPU는 “!include    &amp;lt;ntwin32.mak&amp;gt;” 위에 위치하게 해야 함  win32config 변경 항목123456#!include    &amp;lt;ntwin32.mak&amp;gt;TOOLS32      = C:\Program">
 <meta name="keywords" content="Live555,windows">
 <meta property="og:type" content="article">
 <meta property="og:title" content="LIVE555 윈도우 빌드 방법">
 <meta property="og:url" content="https://sacoku.github.io/2018/10/15/live555-windows-build/index.html">
 <meta property="og:site_name" content="sacoku&#39;s github.io">
-<meta property="og:description" content="Live555 빌드   Live555 Streaming Media 다운로드[2]   LIVE555 64비트 MT 옵션으로 빌드 CPU는 &amp;quot;!include    &amp;lt;ntwin32.mak&amp;gt;&amp;quot; 위에 위치하게 해야 함  win32config 변경 항목 123456#!include    &amp;lt;ntwin32.mak&amp;gt;TOOLS32">
+<meta property="og:description" content="Live555 빌드 Live555 Streaming Media 다운로드[2] LIVE555 64비트 MT 옵션으로 빌드CPU는 “!include    &amp;lt;ntwin32.mak&amp;gt;” 위에 위치하게 해야 함  win32config 변경 항목123456#!include    &amp;lt;ntwin32.mak&amp;gt;TOOLS32      = C:\Program">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://fisproject.jp/wp-content/uploads/live555.png">
 <meta property="og:updated_time" content="2018-10-15T01:00:53.567Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="LIVE555 윈도우 빌드 방법">
-<meta name="twitter:description" content="Live555 빌드   Live555 Streaming Media 다운로드[2]   LIVE555 64비트 MT 옵션으로 빌드 CPU는 &amp;quot;!include    &amp;lt;ntwin32.mak&amp;gt;&amp;quot; 위에 위치하게 해야 함  win32config 변경 항목 123456#!include    &amp;lt;ntwin32.mak&amp;gt;TOOLS32">
+<meta name="twitter:description" content="Live555 빌드 Live555 Streaming Media 다운로드[2] LIVE555 64비트 MT 옵션으로 빌드CPU는 “!include    &amp;lt;ntwin32.mak&amp;gt;” 위에 위치하게 해야 함  win32config 변경 항목123456#!include    &amp;lt;ntwin32.mak&amp;gt;TOOLS32      = C:\Program">
 <meta name="twitter:image" content="https://fisproject.jp/wp-content/uploads/live555.png">
     
 
@@ -178,27 +178,19 @@
         
         
         <div class="article-entry" itemprop="articleBody">
-            <h1>Live555 빌드</h1>
+            <h1 id="Live555-빌드"><a href="#Live555-빌드" class="headerlink" title="Live555 빌드"></a>Live555 빌드</h1><ul>
+<li>Live555 Streaming Media 다운로드[2]</li>
+<li><p>LIVE555 64비트 MT 옵션으로 빌드<br>CPU는 “!include    &lt;ntwin32.mak&gt;” 위에 위치하게 해야 함</p>
 <ul>
-<li>
-<p>Live555 Streaming Media 다운로드[2]</p>
+<li>win32config 변경 항목<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!include    &lt;ntwin32.mak&gt;</span></span><br><span class="line">TOOLS32      = C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC</span><br><span class="line">COMPILE_OPTS = $(INCLUDES) $(cdebug) $(cflags) $(cvarsmt) -I. -I<span class="string">"<span class="variable">$(TOOLS32)</span>\include"</span></span><br><span class="line">C_COMPILER   = <span class="string">"<span class="variable">$(TOOLS32)</span>\bin\amd64\cl"</span></span><br><span class="line">LIBRARY_LINK = lib -MACHINE:X64 -out:</span><br><span class="line">LINK_OPTS_0  = $(linkdebug) libcpmt.lib</span><br></pre></td></tr></table></figure>
 </li>
-<li>
-<p>LIVE555 64비트 MT 옵션으로 빌드
-CPU는 &quot;!include    &lt;ntwin32.mak&gt;&quot; 위에 위치하게 해야 함</p>
-<ul>
-<li>win32config 변경 항목
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!include    &lt;ntwin32.mak&gt;</span></span><br><span class="line">TOOLS32      = C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC</span><br><span class="line">COMPILE_OPTS = $(INCLUDES) $(cdebug) $(cflags) $(cvarsmt) -I. -I<span class="string">"<span class="variable">$(TOOLS32)</span>\include"</span></span><br><span class="line">C_COMPILER   = <span class="string">"<span class="variable">$(TOOLS32)</span>\bin\amd64\cl"</span></span><br><span class="line">LIBRARY_LINK = lib -MACHINE:X64 -out:</span><br><span class="line">LINK_OPTS_0  = $(linkdebug) libcpmt.lib</span><br></pre></td></tr></table></figure></li>
 </ul>
 </li>
-<li>
-<p>genWindowsMakefiles.cmd 실행
-이 명령어의 결과로 .mak(Visual Studio Makefile) 파일이 생성된다.
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; genWindowsMakefiles.<span class="built_in">cmd</span></span><br></pre></td></tr></table></figure></p>
+<li><p>genWindowsMakefiles.cmd 실행<br>이 명령어의 결과로 .mak(Visual Studio Makefile) 파일이 생성된다.</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; genWindowsMakefiles.<span class="built_in">cmd</span></span><br></pre></td></tr></table></figure>
 </li>
-<li>
-<p>각 디렉토리 [BasicUsageEnvironment, groupsock, liveMedia, UsageEnvronment]
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; nmake /A -f [makefile]</span><br></pre></td></tr></table></figure></p>
+<li><p>각 디렉토리 [BasicUsageEnvironment, groupsock, liveMedia, UsageEnvronment]</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; nmake /A -f [makefile]</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 
@@ -208,7 +200,7 @@ CPU는 &quot;!include    &lt;ntwin32.mak&gt;&quot; 위에 위치하게 해야 �
 
 
 
-    <a data-url="https://sacoku.github.io/2018/10/15/live555-windows-build/" data-id="cjn9lbsjj000hkw2stu1wzc1r" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="https://sacoku.github.io/2018/10/15/live555-windows-build/" data-id="cjn9sdwla000fh42shr8ozvu2" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -337,6 +329,16 @@ CPU는 &quot;!include    &lt;ntwin32.mak&gt;&quot; 위에 위치하게 해야 �
         
 <nav id="article-nav">
     
+        <a href="/2018/10/15/20181003/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">새로운</strong>
+        <p class="article-nav-title">
+        
+            안면도 쥬라기 박물관에서
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
     
         <a href="/2018/10/15/webrtc-build/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">오래된</strong>
@@ -358,6 +360,26 @@ CPU는 &quot;!include    &lt;ntwin32.mak&gt;&quot; 위에 위치하게 해야 �
         <h3 class="widget-title">최근 글</h3>
         <div class="widget">
             <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/10/15/20181003/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/20181003_윤준.jpg)" alt="안면도 쥬라기 박물관에서" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/blog/">Blog</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/blog/2018/">2018</a></p>
+                            <p class="item-title"><a href="/2018/10/15/20181003/" class="title">안면도 쥬라기 박물관에서</a></p>
+                            <p class="item-date"><time datetime="2018-10-15T04:12:03.000Z" itemprop="datePublished">2018-10-15</time></p>
+                        </div>
+                    </li>
                 
                     <li>
                         
@@ -439,26 +461,6 @@ CPU는 &quot;!include    &lt;ntwin32.mak&gt;&quot; 위에 위치하게 해야 �
                         </div>
                     </li>
                 
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2018/07/13/infiniband-ipoib-layer2/" class="thumbnail">
-    
-    
-        <span style="background-image:url(https://cdn.worldvectorlogo.com/logos/infiniband.svg)" alt="인피니밴드 IPoIB로 Layer2 제어" class="thumbnail-image"></span>
-    
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/devops/">DevOps</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/devops/network/">Network</a></p>
-                            <p class="item-title"><a href="/2018/07/13/infiniband-ipoib-layer2/" class="title">인피니밴드 IPoIB로 Layer2 제어</a></p>
-                            <p class="item-date"><time datetime="2018-07-13T02:03:22.000Z" itemprop="datePublished">2018-07-13</time></p>
-                        </div>
-                    </li>
-                
             </ul>
         </div>
     </div>
@@ -468,7 +470,7 @@ CPU는 &quot;!include    &lt;ntwin32.mak&gt;&quot; 위에 위치하게 해야 �
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">카테고리</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/bigdata/">Bigdata</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/bigdata/hadoop/">Hadoop</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/blog/">Blog</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/blog/2018/">2018</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/devops/">DevOps</a><span class="category-list-count">9</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/devops/docker/">Docker</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/devops/git/">Git</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/devops/linux/">Linux</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/devops/live555/">Live555</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/devops/network/">Network</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/devops/webrtc/">WebRTC</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/devops/ffmpeg/">ffmpeg</a><span class="category-list-count">1</span></li></ul></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/bigdata/">Bigdata</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/bigdata/hadoop/">Hadoop</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/blog/">Blog</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/blog/2018/">2018</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/devops/">DevOps</a><span class="category-list-count">9</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/devops/docker/">Docker</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/devops/git/">Git</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/devops/linux/">Linux</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/devops/live555/">Live555</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/devops/network/">Network</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/devops/webrtc/">WebRTC</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/devops/ffmpeg/">ffmpeg</a><span class="category-list-count">1</span></li></ul></li></ul>
         </div>
     </div>
 
@@ -478,7 +480,7 @@ CPU는 &quot;!include    &lt;ntwin32.mak&gt;&quot; 위에 위치하게 해야 �
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">아카이브</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">10월 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">7월 2018</a><span class="archive-list-count">8</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">10월 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">7월 2018</a><span class="archive-list-count">8</span></li></ul>
         </div>
     </div>
 
@@ -488,7 +490,7 @@ CPU는 &quot;!include    &lt;ntwin32.mak&gt;&quot; 위에 위치하게 해야 �
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">태그</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/alpine-linux/">Alpine Linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bigdata/">Bigdata</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/">Docker</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">Git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hadoop/">Hadoop</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/infiniband/">Infiniband</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ipoib/">IpoIB</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">Linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/live555/">Live555</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sons/">Sons</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/timezone/">Timezone</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ffmpeg/">ffmpeg</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iptables/">iptables</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/webrtc/">webrtc</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows/">windows</a><span class="tag-list-count">2</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/alpine-linux/">Alpine Linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bigdata/">Bigdata</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/">Docker</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">Git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hadoop/">Hadoop</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/infiniband/">Infiniband</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ipoib/">IpoIB</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">Linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/live555/">Live555</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sons/">Sons</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/timezone/">Timezone</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/travel/">Travel</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ffmpeg/">ffmpeg</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iptables/">iptables</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/webrtc/">webrtc</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows/">windows</a><span class="tag-list-count">2</span></li></ul>
         </div>
     </div>
 
@@ -498,7 +500,7 @@ CPU는 &quot;!include    &lt;ntwin32.mak&gt;&quot; 위에 위치하게 해야 �
     <div class="widget-wrap widget-float">
         <h3 class="widget-title">태그 클라우드</h3>
         <div class="widget tagcloud">
-            <a href="/tags/alpine-linux/" style="font-size: 10px;">Alpine Linux</a> <a href="/tags/bigdata/" style="font-size: 10px;">Bigdata</a> <a href="/tags/docker/" style="font-size: 20px;">Docker</a> <a href="/tags/git/" style="font-size: 10px;">Git</a> <a href="/tags/hadoop/" style="font-size: 10px;">Hadoop</a> <a href="/tags/infiniband/" style="font-size: 10px;">Infiniband</a> <a href="/tags/ipoib/" style="font-size: 10px;">IpoIB</a> <a href="/tags/linux/" style="font-size: 10px;">Linux</a> <a href="/tags/live555/" style="font-size: 10px;">Live555</a> <a href="/tags/sons/" style="font-size: 10px;">Sons</a> <a href="/tags/timezone/" style="font-size: 10px;">Timezone</a> <a href="/tags/ffmpeg/" style="font-size: 10px;">ffmpeg</a> <a href="/tags/iptables/" style="font-size: 10px;">iptables</a> <a href="/tags/webrtc/" style="font-size: 10px;">webrtc</a> <a href="/tags/windows/" style="font-size: 15px;">windows</a>
+            <a href="/tags/alpine-linux/" style="font-size: 10px;">Alpine Linux</a> <a href="/tags/bigdata/" style="font-size: 10px;">Bigdata</a> <a href="/tags/docker/" style="font-size: 20px;">Docker</a> <a href="/tags/git/" style="font-size: 10px;">Git</a> <a href="/tags/hadoop/" style="font-size: 10px;">Hadoop</a> <a href="/tags/infiniband/" style="font-size: 10px;">Infiniband</a> <a href="/tags/ipoib/" style="font-size: 10px;">IpoIB</a> <a href="/tags/linux/" style="font-size: 10px;">Linux</a> <a href="/tags/live555/" style="font-size: 10px;">Live555</a> <a href="/tags/sons/" style="font-size: 15px;">Sons</a> <a href="/tags/timezone/" style="font-size: 10px;">Timezone</a> <a href="/tags/travel/" style="font-size: 10px;">Travel</a> <a href="/tags/ffmpeg/" style="font-size: 10px;">ffmpeg</a> <a href="/tags/iptables/" style="font-size: 10px;">iptables</a> <a href="/tags/webrtc/" style="font-size: 10px;">webrtc</a> <a href="/tags/windows/" style="font-size: 15px;">windows</a>
         </div>
     </div>
 

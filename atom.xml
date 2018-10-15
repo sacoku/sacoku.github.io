@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sacoku.github.io/"/>
-  <updated>2018-10-15T01:00:53.567Z</updated>
+  <updated>2018-10-15T04:17:10.524Z</updated>
   <id>https://sacoku.github.io/</id>
   
   <author>
@@ -17,26 +17,51 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>안면도 쥬라기 박물관에서</title>
+    <link href="https://sacoku.github.io/2018/10/15/20181003/"/>
+    <id>https://sacoku.github.io/2018/10/15/20181003/</id>
+    <published>2018-10-15T04:12:03.000Z</published>
+    <updated>2018-10-15T04:17:10.524Z</updated>
+    
+    <content type="html"><![CDATA[<p>안면도 쥬라기 방문관에서 </p><p><img src="/images/20181003_윤준.jpg" alt="윤준"><br><img src="/images/20181003_지후.jpg" alt="지후"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;안면도 쥬라기 방문관에서 &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/20181003_윤준.jpg&quot; alt=&quot;윤준&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/20181003_지후.jpg&quot; alt=&quot;지후&quot;&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="Blog" scheme="https://sacoku.github.io/categories/blog/"/>
+    
+      <category term="2018" scheme="https://sacoku.github.io/categories/blog/2018/"/>
+    
+    
+      <category term="Travel" scheme="https://sacoku.github.io/tags/travel/"/>
+    
+      <category term="Sons" scheme="https://sacoku.github.io/tags/sons/"/>
+    
+  </entry>
+  
+  <entry>
     <title>LIVE555 윈도우 빌드 방법</title>
     <link href="https://sacoku.github.io/2018/10/15/live555-windows-build/"/>
     <id>https://sacoku.github.io/2018/10/15/live555-windows-build/</id>
     <published>2018-10-15T00:56:50.000Z</published>
     <updated>2018-10-15T01:00:53.567Z</updated>
     
-    <content type="html"><![CDATA[<h1>Live555 빌드</h1><ul><li><p>Live555 Streaming Media 다운로드[2]</p></li><li><p>LIVE555 64비트 MT 옵션으로 빌드CPU는 &quot;!include    &lt;ntwin32.mak&gt;&quot; 위에 위치하게 해야 함</p><ul><li>win32config 변경 항목<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!include    &lt;ntwin32.mak&gt;</span></span><br><span class="line">TOOLS32      = C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC</span><br><span class="line">COMPILE_OPTS = $(INCLUDES) $(cdebug) $(cflags) $(cvarsmt) -I. -I<span class="string">"<span class="variable">$(TOOLS32)</span>\include"</span></span><br><span class="line">C_COMPILER   = <span class="string">"<span class="variable">$(TOOLS32)</span>\bin\amd64\cl"</span></span><br><span class="line">LIBRARY_LINK = lib -MACHINE:X64 -out:</span><br><span class="line">LINK_OPTS_0  = $(linkdebug) libcpmt.lib</span><br></pre></td></tr></table></figure></li></ul></li><li><p>genWindowsMakefiles.cmd 실행이 명령어의 결과로 .mak(Visual Studio Makefile) 파일이 생성된다.<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; genWindowsMakefiles.<span class="built_in">cmd</span></span><br></pre></td></tr></table></figure></p></li><li><p>각 디렉토리 [BasicUsageEnvironment, groupsock, liveMedia, UsageEnvronment]<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; nmake /A -f [makefile]</span><br></pre></td></tr></table></figure></p></li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="Live555-빌드"><a href="#Live555-빌드" class="headerlink" title="Live555 빌드"></a>Live555 빌드</h1><ul><li>Live555 Streaming Media 다운로드[2]</li><li><p>LIVE555 64비트 MT 옵션으로 빌드<br>CPU는 “!include    &lt;ntwin32.mak&gt;” 위에 위치하게 해야 함</p><ul><li>win32config 변경 항목<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!include    &lt;ntwin32.mak&gt;</span></span><br><span class="line">TOOLS32      = C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC</span><br><span class="line">COMPILE_OPTS = $(INCLUDES) $(cdebug) $(cflags) $(cvarsmt) -I. -I<span class="string">"<span class="variable">$(TOOLS32)</span>\include"</span></span><br><span class="line">C_COMPILER   = <span class="string">"<span class="variable">$(TOOLS32)</span>\bin\amd64\cl"</span></span><br><span class="line">LIBRARY_LINK = lib -MACHINE:X64 -out:</span><br><span class="line">LINK_OPTS_0  = $(linkdebug) libcpmt.lib</span><br></pre></td></tr></table></figure></li></ul></li><li><p>genWindowsMakefiles.cmd 실행<br>이 명령어의 결과로 .mak(Visual Studio Makefile) 파일이 생성된다.</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; genWindowsMakefiles.<span class="built_in">cmd</span></span><br></pre></td></tr></table></figure></li><li><p>각 디렉토리 [BasicUsageEnvironment, groupsock, liveMedia, UsageEnvronment]</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; nmake /A -f [makefile]</span><br></pre></td></tr></table></figure></li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1&gt;Live555 빌드&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Live555 Streaming Media 다운로드[2]&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;LIVE555 64비트 MT 옵션으로 빌드
-CPU는 &amp;quot;!include    &amp;lt;ntwin3
+        &lt;h1 id=&quot;Live555-빌드&quot;&gt;&lt;a href=&quot;#Live555-빌드&quot; class=&quot;headerlink&quot; title=&quot;Live555 빌드&quot;&gt;&lt;/a&gt;Live555 빌드&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;Live555 Streaming Media 다운로드[2]&lt;
       
     
     </summary>
