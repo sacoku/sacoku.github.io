@@ -77,7 +77,7 @@
     <link href="https://sacoku.github.io/2018/07/13/infiniband-ipoib-layer2/"/>
     <id>https://sacoku.github.io/2018/07/13/infiniband-ipoib-layer2/</id>
     <published>2018-07-13T02:03:22.000Z</published>
-    <updated>2018-07-13T02:14:28.299Z</updated>
+    <updated>2018-10-15T00:44:03.212Z</updated>
     
     <content type="html"><![CDATA[<p>작성예정(deprecated 된 EIpoIB 포팅)</p>]]></content>
     
@@ -91,9 +91,9 @@
     
     </summary>
     
-      <category term="Deveop" scheme="https://sacoku.github.io/categories/deveop/"/>
+      <category term="DevOps" scheme="https://sacoku.github.io/categories/devops/"/>
     
-      <category term="Network" scheme="https://sacoku.github.io/categories/deveop/network/"/>
+      <category term="Network" scheme="https://sacoku.github.io/categories/devops/network/"/>
     
     
       <category term="Infiniband" scheme="https://sacoku.github.io/tags/infiniband/"/>
