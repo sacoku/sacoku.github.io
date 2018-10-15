@@ -10,25 +10,25 @@
     
 
     
-    <title>FFMPEG ������ ��� | sacoku&#39;s github.io</title>
+    <title>FFMPEG 윈도우 빌드 | sacoku&#39;s github.io</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
         <meta name="keywords" content="ffmpeg" />
     
-    <meta name="description" content="FFMpeg windows build(x64)��ġ��, Visual C++�� �����Ϸ�(cl)�� �̿��ؼ� ��� �ϹǷ� Visual C++ �� ��ġ �Ǿ� �־�� �� msys2 ��ġ(http://www.msys2.org)���� Linux ȯ���� �����ϸ� gcc�� ����Ͽ� ������ exe�� ����� �� �� �">
+    <meta name="description" content="FFMpeg windows build(x64)설치시, Visual C++의 컴파일러(cl)을 이용해서 빌드 하므로 Visual C++ 가 설치 되어 있어야 함 msys2 설치(http://www.msys2.org)가상 Linux 환경을 제공하며 gcc를 사용하여 윈도우 exe를 만들어 낼 수 있다.  msys2 실행 비주얼 스튜디오의 x64 개발자 쉘에서">
 <meta name="keywords" content="ffmpeg">
 <meta property="og:type" content="article">
-<meta property="og:title" content="FFMPEG ������ ���">
+<meta property="og:title" content="FFMPEG 윈도우 빌드">
 <meta property="og:url" content="https://sacoku.github.io/2018/10/15/ffmpeg-windows-build/index.html">
 <meta property="og:site_name" content="sacoku&#39;s github.io">
-<meta property="og:description" content="FFMpeg windows build(x64)��ġ��, Visual C++�� �����Ϸ�(cl)�� �̿��ؼ� ��� �ϹǷ� Visual C++ �� ��ġ �Ǿ� �־�� �� msys2 ��ġ(http://www.msys2.org)���� Linux ȯ���� �����ϸ� gcc�� ����Ͽ� ������ exe�� ����� �� �� �">
+<meta property="og:description" content="FFMpeg windows build(x64)설치시, Visual C++의 컴파일러(cl)을 이용해서 빌드 하므로 Visual C++ 가 설치 되어 있어야 함 msys2 설치(http://www.msys2.org)가상 Linux 환경을 제공하며 gcc를 사용하여 윈도우 exe를 만들어 낼 수 있다.  msys2 실행 비주얼 스튜디오의 x64 개발자 쉘에서">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*mgCxTQSqrTvKsmDRmuRa7w.jpeg">
-<meta property="og:updated_time" content="2018-10-15T00:41:42.227Z">
+<meta property="og:updated_time" content="2018-10-15T00:46:11.941Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="FFMPEG ������ ���">
-<meta name="twitter:description" content="FFMpeg windows build(x64)��ġ��, Visual C++�� �����Ϸ�(cl)�� �̿��ؼ� ��� �ϹǷ� Visual C++ �� ��ġ �Ǿ� �־�� �� msys2 ��ġ(http://www.msys2.org)���� Linux ȯ���� �����ϸ� gcc�� ����Ͽ� ������ exe�� ����� �� �� �">
+<meta name="twitter:title" content="FFMPEG 윈도우 빌드">
+<meta name="twitter:description" content="FFMpeg windows build(x64)설치시, Visual C++의 컴파일러(cl)을 이용해서 빌드 하므로 Visual C++ 가 설치 되어 있어야 함 msys2 설치(http://www.msys2.org)가상 Linux 환경을 제공하며 gcc를 사용하여 윈도우 exe를 만들어 낼 수 있다.  msys2 실행 비주얼 스튜디오의 x64 개발자 쉘에서">
 <meta name="twitter:image" content="https://cdn-images-1.medium.com/max/800/1*mgCxTQSqrTvKsmDRmuRa7w.jpeg">
     
 
@@ -153,7 +153,7 @@
                 
     
         <h1 class="article-title" itemprop="name">
-        FFMPEG ������ ���
+        FFMPEG 윈도우 빌드
         </h1>
     
 
@@ -178,37 +178,37 @@
         
         
         <div class="article-entry" itemprop="articleBody">
-            <h1 id="FFMpeg-windows-build-x64"><a href="#FFMpeg-windows-build-x64" class="headerlink" title="FFMpeg windows build(x64)"></a>FFMpeg windows build(x64)</h1><p>��ġ��, Visual C++�� �����Ϸ�(cl)�� �̿��ؼ� ��� �ϹǷ� Visual C++ �� ��ġ �Ǿ� �־�� ��</p>
-<h2 id="msys2-��g-http-www-msys2-org"><a href="#msys2-��g-http-www-msys2-org" class="headerlink" title="msys2 ��ġ(http://www.msys2.org)"></a>msys2 ��ġ(<a href="http://www.msys2.org" target="_blank" rel="noopener">http://www.msys2.org</a>)</h2><p>���� Linux ȯ���� �����ϸ� gcc�� ����Ͽ� ������ exe�� ����� �� �� �ִ�.</p>
+            <h1 id="FFMpeg-windows-build-x64"><a href="#FFMpeg-windows-build-x64" class="headerlink" title="FFMpeg windows build(x64)"></a>FFMpeg windows build(x64)</h1><p>설치시, Visual C++의 컴파일러(cl)을 이용해서 빌드 하므로 Visual C++ 가 설치 되어 있어야 함</p>
+<h2 id="msys2-설치-http-www-msys2-org"><a href="#msys2-설치-http-www-msys2-org" class="headerlink" title="msys2 설치(http://www.msys2.org)"></a>msys2 설치(<a href="http://www.msys2.org" target="_blank" rel="noopener">http://www.msys2.org</a>)</h2><p>가상 Linux 환경을 제공하며 gcc를 사용하여 윈도우 exe를 만들어 낼 수 있다.</p>
 <ol>
-<li><p>msys2 ����</p>
-<p>���־� ��Ʃ����� x64 ������ ������ �Ʒ��� ��ɾ �����Ѵ�.</p>
+<li><p>msys2 실행</p>
+<p>비주얼 스튜디오의 x64 개발자 쉘에서 아래의 명령어를 실행한다.</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">c:\<span class="title">msys2</span>&gt; <span class="title">msys2_shell.cmd</span> -<span class="title">use</span>-<span class="title">full</span>-<span class="title">path</span> -<span class="title">mingw64</span></span></span><br></pre></td></tr></table></figure>
 </li>
-<li><p>�ʼ� ��Ű�� ��ġ.</p>
+<li><p>필수 패키지 설치.</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ pacman -S make gcc diffutils</span><br><span class="line">$ pacman -S pkg-config</span><br><span class="line">$ pacman -S yasm nasm</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>��Ŀ �̸� ����</p>
-<p>MSVC�� ��Ŀ�� �浹�� �߻��� �� �ֱ� ������ msys2�� link.exe�� �̸��� �����Ѵ�.(ex:link_org.exe)</p>
+<li><p>링커 이름 변경</p>
+<p>MSVC의 링커와 충돌이 발생할 수 있기 때문에 msys2의 link.exe의 이름을 변경한다.(ex:link_org.exe)</p>
 </li>
-<li><p>cl Ȯ��</p>
-<p>�Ʒ��� ��ɾ�� x64 cl�� ��ΰ� ���� �Ǿ� �ִ��� Ȯ��(cl�� ��ġ�� ������ �Ǿ� �־�� �Ѵ�.)</p>
+<li><p>cl 확인</p>
+<p>아래의 명령어로 x64 cl로 경로가 설정 되어 있는지 확인(cl의 위치가 설정이 되어 있어야 한다.)</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">which</span> cl</span><br><span class="line">$ <span class="built_in">which</span> link</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<h2 id="x264-��g"><a href="#x264-��g" class="headerlink" title="x264 ��ġ"></a>x264 ��ġ</h2><ol>
-<li><p>x264 �ٿ�ε�(<a href="http://www.videolan.org/developers/x264.html" target="_blank" rel="noopener">http://www.videolan.org/developers/x264.html</a>)</p>
+<h2 id="x264-설치"><a href="#x264-설치" class="headerlink" title="x264 설치"></a>x264 설치</h2><ol>
+<li><p>x264 다운로드(<a href="http://www.videolan.org/developers/x264.html" target="_blank" rel="noopener">http://www.videolan.org/developers/x264.html</a>)</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> http://git.videolan.org/git/x264.git</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>��� &amp;&amp; ��ġ</p>
+<li><p>빌드 &amp;&amp; 설치</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ./configure --<span class="built_in">enable</span>-shared</span><br><span class="line">$ make &amp;&amp; make install</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<h2 id="FFMPEG-��g"><a href="#FFMPEG-��g" class="headerlink" title="FFMPEG ��ġ"></a>FFMPEG ��ġ</h2><ol>
-<li><p>FFMPEG �ٿ�ε�</p>
+<h2 id="FFMPEG-설치"><a href="#FFMPEG-설치" class="headerlink" title="FFMPEG 설치"></a>FFMPEG 설치</h2><ol>
+<li><p>FFMPEG 다운로드</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://git.ffmpeg.org/ffmpeg.git</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>��� &amp;&amp; ��ġ</p>
+<li><p>빌드 &amp;&amp; 설치</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ ./configure --toolchain=msvc --arch=x86_64 --<span class="built_in">enable</span>-shared \</span><br><span class="line">              --<span class="built_in">enable</span>-gpl --<span class="built_in">disable</span>-doc --<span class="built_in">enable</span>-d3d11va \</span><br><span class="line">              --<span class="built_in">enable</span>-dxva2 --prefix=./install</span><br><span class="line">$ make &amp;&amp; make install</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
@@ -219,7 +219,7 @@
 
 
 
-    <a data-url="https://sacoku.github.io/2018/10/15/ffmpeg-windows-build/" data-id="cjn9kpzwz00077s2sfy6k2lxd" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="https://sacoku.github.io/2018/10/15/ffmpeg-windows-build/" data-id="cjn9kvo8i0008j82su13cgouf" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -376,7 +376,7 @@
                             <a href="/2018/10/15/ffmpeg-windows-build/" class="thumbnail">
     
     
-        <span style="background-image:url(https://cdn-images-1.medium.com/max/800/1*mgCxTQSqrTvKsmDRmuRa7w.jpeg)" alt="FFMPEG ������ ���" class="thumbnail-image"></span>
+        <span style="background-image:url(https://cdn-images-1.medium.com/max/800/1*mgCxTQSqrTvKsmDRmuRa7w.jpeg)" alt="FFMPEG 윈도우 빌드" class="thumbnail-image"></span>
     
     
 </a>
@@ -385,7 +385,7 @@
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/devops/">DevOps</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/devops/ffmpeg/">ffmpeg</a></p>
-                            <p class="item-title"><a href="/2018/10/15/ffmpeg-windows-build/" class="title">FFMPEG ������ ���</a></p>
+                            <p class="item-title"><a href="/2018/10/15/ffmpeg-windows-build/" class="title">FFMPEG 윈도우 빌드</a></p>
                             <p class="item-date"><time datetime="2018-10-15T00:37:00.000Z" itemprop="datePublished">2018-10-15</time></p>
                         </div>
                     </li>
