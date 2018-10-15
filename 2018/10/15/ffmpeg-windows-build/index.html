@@ -10,26 +10,26 @@
     
 
     
-    <title>Alpine Linux에서 Timezone 세팅 | sacoku&#39;s github.io</title>
+    <title>FFMPEG ������ ��� | sacoku&#39;s github.io</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-        <meta name="keywords" content="Docker,Alpine Linux,Timezone" />
+        <meta name="keywords" content="ffmpeg" />
     
-    <meta name="description" content="Docker로 Image를 만들다 보면, Alpine Linux Base로 할 경우가 많은데, 로그 생성 시, Timezone 문제로 로깅에 어려움을 겪는 경우가 있다. 이 경우 아래의 명령으로 Timezone 문제로 해결 할 수 있다. 12$ apk add tzdata$ cp /usr/share/zoneinfo/Asia/Seoul /etc/localtim">
-<meta name="keywords" content="Docker,Alpine Linux,Timezone">
+    <meta name="description" content="FFMpeg windows build(x64)��ġ��, Visual C++�� �����Ϸ�(cl)�� �̿��ؼ� ��� �ϹǷ� Visual C++ �� ��ġ �Ǿ� �־�� �� msys2 ��ġ(http://www.msys2.org)���� Linux ȯ���� �����ϸ� gcc�� ����Ͽ� ������ exe�� ����� �� �� �">
+<meta name="keywords" content="ffmpeg">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Alpine Linux에서 Timezone 세팅">
-<meta property="og:url" content="https://sacoku.github.io/2018/07/13/alpine-linux-timezone/index.html">
+<meta property="og:title" content="FFMPEG ������ ���">
+<meta property="og:url" content="https://sacoku.github.io/2018/10/15/ffmpeg-windows-build/index.html">
 <meta property="og:site_name" content="sacoku&#39;s github.io">
-<meta property="og:description" content="Docker로 Image를 만들다 보면, Alpine Linux Base로 할 경우가 많은데, 로그 생성 시, Timezone 문제로 로깅에 어려움을 겪는 경우가 있다. 이 경우 아래의 명령으로 Timezone 문제로 해결 할 수 있다. 12$ apk add tzdata$ cp /usr/share/zoneinfo/Asia/Seoul /etc/localtim">
+<meta property="og:description" content="FFMpeg windows build(x64)��ġ��, Visual C++�� �����Ϸ�(cl)�� �̿��ؼ� ��� �ϹǷ� Visual C++ �� ��ġ �Ǿ� �־�� �� msys2 ��ġ(http://www.msys2.org)���� Linux ȯ���� �����ϸ� gcc�� ����Ͽ� ������ exe�� ����� �� �� �">
 <meta property="og:locale" content="ko">
-<meta property="og:image" content="https://subicura.com/assets/article_images/2017-01-19-docker-guide-for-beginners-1/docker-logo.png">
-<meta property="og:updated_time" content="2018-07-13T01:59:01.432Z">
+<meta property="og:image" content="https://cdn-images-1.medium.com/max/800/1*mgCxTQSqrTvKsmDRmuRa7w.jpeg">
+<meta property="og:updated_time" content="2018-10-15T00:41:42.227Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Alpine Linux에서 Timezone 세팅">
-<meta name="twitter:description" content="Docker로 Image를 만들다 보면, Alpine Linux Base로 할 경우가 많은데, 로그 생성 시, Timezone 문제로 로깅에 어려움을 겪는 경우가 있다. 이 경우 아래의 명령으로 Timezone 문제로 해결 할 수 있다. 12$ apk add tzdata$ cp /usr/share/zoneinfo/Asia/Seoul /etc/localtim">
-<meta name="twitter:image" content="https://subicura.com/assets/article_images/2017-01-19-docker-guide-for-beginners-1/docker-logo.png">
+<meta name="twitter:title" content="FFMPEG ������ ���">
+<meta name="twitter:description" content="FFMpeg windows build(x64)��ġ��, Visual C++�� �����Ϸ�(cl)�� �̿��ؼ� ��� �ϹǷ� Visual C++ �� ��ġ �Ǿ� �־�� �� msys2 ��ġ(http://www.msys2.org)���� Linux ȯ���� �����ϸ� gcc�� ����Ͽ� ������ exe�� ����� �� �� �">
+<meta name="twitter:image" content="https://cdn-images-1.medium.com/max/800/1*mgCxTQSqrTvKsmDRmuRa7w.jpeg">
     
 
     
@@ -142,18 +142,18 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <a class="page-title-link" href="/categories/devops/">DevOps</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/devops/linux/">Linux</a>
+    <a class="page-title-link" href="/categories/devops/">DevOps</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/devops/ffmpeg/">ffmpeg</a>
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="post-alpine-linux-timezone" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-ffmpeg-windows-build" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        Alpine Linux에서 Timezone 세팅
+        FFMPEG ������ ���
         </h1>
     
 
@@ -163,24 +163,55 @@
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2018/07/13/alpine-linux-timezone/" class="article-date">
-            <time datetime="2018-07-13T01:57:10.000Z" itemprop="datePublished">2018-07-13</time>
+        <a href="/2018/10/15/ffmpeg-windows-build/" class="article-date">
+            <time datetime="2018-10-15T00:37:00.000Z" itemprop="datePublished">2018-10-15</time>
         </a>
     </div>
 
                 
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/alpine-linux/">Alpine Linux</a>, <a class="tag-link" href="/tags/docker/">Docker</a>, <a class="tag-link" href="/tags/timezone/">Timezone</a>
+        <a class="tag-link" href="/tags/ffmpeg/">ffmpeg</a>
     </div>
 
             </div>
         
         
         <div class="article-entry" itemprop="articleBody">
-            <p>Docker로 Image를 만들다 보면, Alpine Linux Base로 할 경우가 많은데, 로그 생성 시, Timezone 문제로</p>
-<p>로깅에 어려움을 겪는 경우가 있다. 이 경우 아래의 명령으로 Timezone 문제로 해결 할 수 있다.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ apk add tzdata</span><br><span class="line">$ cp /usr/share/zoneinfo/Asia/Seoul /etc/localtime</span><br></pre></td></tr></table></figure>
+            <h1 id="FFMpeg-windows-build-x64"><a href="#FFMpeg-windows-build-x64" class="headerlink" title="FFMpeg windows build(x64)"></a>FFMpeg windows build(x64)</h1><p>��ġ��, Visual C++�� �����Ϸ�(cl)�� �̿��ؼ� ��� �ϹǷ� Visual C++ �� ��ġ �Ǿ� �־�� ��</p>
+<h2 id="msys2-��g-http-www-msys2-org"><a href="#msys2-��g-http-www-msys2-org" class="headerlink" title="msys2 ��ġ(http://www.msys2.org)"></a>msys2 ��ġ(<a href="http://www.msys2.org" target="_blank" rel="noopener">http://www.msys2.org</a>)</h2><p>���� Linux ȯ���� �����ϸ� gcc�� ����Ͽ� ������ exe�� ����� �� �� �ִ�.</p>
+<ol>
+<li><p>msys2 ����</p>
+<p>���־� ��Ʃ����� x64 ������ ������ �Ʒ��� ��ɾ �����Ѵ�.</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">c:\<span class="title">msys2</span>&gt; <span class="title">msys2_shell.cmd</span> -<span class="title">use</span>-<span class="title">full</span>-<span class="title">path</span> -<span class="title">mingw64</span></span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>�ʼ� ��Ű�� ��ġ.</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ pacman -S make gcc diffutils</span><br><span class="line">$ pacman -S pkg-config</span><br><span class="line">$ pacman -S yasm nasm</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>��Ŀ �̸� ����</p>
+<p>MSVC�� ��Ŀ�� �浹�� �߻��� �� �ֱ� ������ msys2�� link.exe�� �̸��� �����Ѵ�.(ex:link_org.exe)</p>
+</li>
+<li><p>cl Ȯ��</p>
+<p>�Ʒ��� ��ɾ�� x64 cl�� ��ΰ� ���� �Ǿ� �ִ��� Ȯ��(cl�� ��ġ�� ������ �Ǿ� �־�� �Ѵ�.)</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">which</span> cl</span><br><span class="line">$ <span class="built_in">which</span> link</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="x264-��g"><a href="#x264-��g" class="headerlink" title="x264 ��ġ"></a>x264 ��ġ</h2><ol>
+<li><p>x264 �ٿ�ε�(<a href="http://www.videolan.org/developers/x264.html" target="_blank" rel="noopener">http://www.videolan.org/developers/x264.html</a>)</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> http://git.videolan.org/git/x264.git</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>��� &amp;&amp; ��ġ</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ./configure --<span class="built_in">enable</span>-shared</span><br><span class="line">$ make &amp;&amp; make install</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="FFMPEG-��g"><a href="#FFMPEG-��g" class="headerlink" title="FFMPEG ��ġ"></a>FFMPEG ��ġ</h2><ol>
+<li><p>FFMPEG �ٿ�ε�</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://git.ffmpeg.org/ffmpeg.git</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>��� &amp;&amp; ��ġ</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ ./configure --toolchain=msvc --arch=x86_64 --<span class="built_in">enable</span>-shared \</span><br><span class="line">              --<span class="built_in">enable</span>-gpl --<span class="built_in">disable</span>-doc --<span class="built_in">enable</span>-d3d11va \</span><br><span class="line">              --<span class="built_in">enable</span>-dxva2 --prefix=./install</span><br><span class="line">$ make &amp;&amp; make install</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
 
         </div>
         <footer class="article-footer">
@@ -188,7 +219,7 @@
 
 
 
-    <a data-url="https://sacoku.github.io/2018/07/13/alpine-linux-timezone/" data-id="cjn9kpzx100087s2sb0ivycrd" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="https://sacoku.github.io/2018/10/15/ffmpeg-windows-build/" data-id="cjn9kpzwz00077s2sfy6k2lxd" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -317,20 +348,10 @@
         
 <nav id="article-nav">
     
-        <a href="/2018/07/13/infiniband-ipoib-layer2/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">새로운</strong>
-        <p class="article-nav-title">
-        
-            인피니밴드 IPoIB로 Layer2 제어
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
-    
-        <a href="/2018/07/13/git-crlf/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2018/07/13/how-to-iptables/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">오래된</strong>
-        <p class="article-nav-title">GIT CRLF 문제</p>
+        <p class="article-nav-title">Iptables 일반사항</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -544,7 +565,7 @@
     var disqus_shortname = 'sacou-github-io';
     
     
-    var disqus_url = 'https://sacoku.github.io/2018/07/13/alpine-linux-timezone/';
+    var disqus_url = 'https://sacoku.github.io/2018/10/15/ffmpeg-windows-build/';
     
     (function() {
     var dsq = document.createElement('script');
