@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tech/infra on Sacoku Blog</title>
+    <link>http://sacoku.github.io/categories/tech/infra/</link>
+    <description>Recent content in tech/infra on Sacoku Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language><atom:link href="http://sacoku.github.io/categories/tech/infra/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>phpVirtualbox 구축 방법</title>
+      <link>http://sacoku.github.io/tech/210717-phpvirtualbox/</link>
+      <pubDate>Sat, 17 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://sacoku.github.io/tech/210717-phpvirtualbox/</guid>
+      <description>1. Virtualbox 설치 준비 $ sudo add-apt-repository universe $ sudo add-apt-repository multiverse $ sudo apt update $ sudo apt upgrade $ sudo apt dist-upgrade $ sudo apt install build-essential dkms unzip wget $ sudo reboot VirtualBox Source Repo 추가 $ sudo nano /etc/apt/sources.list $ deb http://download.virtualbox.org/virtualbox/debian [rel] contrib GPG 키 추가 $ wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add - $ sudo apt update 설치 $ sudo apt install virtualbox VirtualBox Group 및 User 추가 $ sudo usermod -aG vboxusers vbox $ sudo passwd vbox Extension Pack 설치 $ wget https://download.</description>
+    </item>
+    
+  </channel>
+</rss>

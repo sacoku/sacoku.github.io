@@ -11,10 +11,22 @@
     <loc>http://sacoku.github.io/categories/</loc>
     <lastmod>2021-07-17T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://sacoku.github.io/tags/phpvirtualbox/</loc>
+    <lastmod>2021-07-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://sacoku.github.io/tech/210717-phpvirtualbox/</loc>
+    <lastmod>2021-07-17T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://sacoku.github.io/</loc>
     <lastmod>2021-07-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://sacoku.github.io/tags/</loc>
+    <lastmod>2021-07-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://sacoku.github.io/tech/</loc>
+    <lastmod>2021-07-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://sacoku.github.io/tags/virtualbox/</loc>
     <lastmod>2021-07-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://sacoku.github.io/blog/first/</loc>
@@ -22,5 +34,7 @@
   </url><url>
     <loc>http://sacoku.github.io/tags/%EC%9A%A9%EA%B5%AC%ED%98%95/</loc>
     <lastmod>2021-07-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://sacoku.github.io/categories/tech/infra/</loc>
   </url>
 </urlset>

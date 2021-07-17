@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>phpVirtualbox 구축 방법 - Sacoku Blog</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="https://www.virtualbox.org/graphics/vbox_logo2_gradient.png">
+		<meta property="og:title" content="phpVirtualbox 구축 방법" />
+<meta property="og:description" content="https://www.virtualbox.org/graphics/vbox_logo2_gradient.png" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://sacoku.github.io/tech/210717-phpvirtualbox/" /><meta property="article:section" content="tech" />
+<meta property="article:published_time" content="2021-07-17T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-07-17T00:00:00+00:00" />
+
+
+		<meta itemprop="name" content="phpVirtualbox 구축 방법">
+<meta itemprop="description" content="https://www.virtualbox.org/graphics/vbox_logo2_gradient.png"><meta itemprop="datePublished" content="2021-07-17T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-07-17T00:00:00+00:00" />
+<meta itemprop="wordCount" content="308">
+<meta itemprop="keywords" content="virtualbox,phpvirtualbox," />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="phpVirtualbox 구축 방법"/>
+<meta name="twitter:description" content="https://www.virtualbox.org/graphics/vbox_logo2_gradient.png"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Sunghyun&#39;s logging" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/image/sacoku.jpeg">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Sunghyun&#39;s logging</div>
+					<div class="logo__tagline">즐겁게 잘살자!!!</div>
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">phpVirtualbox 구축 방법</h1>
+			<div class="post__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">Sunghyun Kim</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-07-17T00:00:00Z">2021-07-17</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/tech/infra/" rel="category">tech/infra</a>
+	</span>
+</div></div>
+		</header>
+		<figure class="post__thumbnail">
+			<img src="https://www.virtualbox.org/graphics/vbox_logo2_gradient.png" alt="phpVirtualbox 구축 방법">
+		</figure>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-virtualbox-설치">1. Virtualbox 설치</a>
+      <ul>
+        <li><a href="#준비">준비</a></li>
+        <li><a href="#virtualbox-source-repo-추가">VirtualBox Source Repo 추가</a></li>
+        <li><a href="#gpg-키-추가">GPG 키 추가</a></li>
+        <li><a href="#설치">설치</a></li>
+        <li><a href="#virtualbox-group-및-user-추가">VirtualBox Group 및 User 추가</a></li>
+        <li><a href="#extension-pack-설치">Extension Pack 설치</a></li>
+        <li><a href="#vboxdrv-및-vboxweb-service-설치">vboxdrv 및 vboxweb-service 설치</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-phpvirtualbox-설치">2. phpVirtualBox 설치</a>
+      <ul>
+        <li><a href="#필수-패키지-설치">필수 패키지 설치</a></li>
+        <li><a href="#phpvirtualbox-설치">phpVirtualBox 설치</a></li>
+        <li><a href="#config">config</a></li>
+        <li><a href="#configphp-파일-수정">config.php 파일 수정</a></li>
+        <li><a href="#etcdefaultvirtualbox-수정">/etc/default/virtualbox 수정</a></li>
+        <li><a href="#실행">실행</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-참고">3. 참고</a>
+      <ul>
+        <li><a href="#remote-desktop-사용">Remote Desktop 사용</a></li>
+        <li><a href="#네트워크-관련">네트워크 관련</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-troubleshooting">4. TroubleShooting</a></li>
+    <li><a href="#5-reference">5. Reference</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<h2 id="1-virtualbox-설치">1. Virtualbox 설치</h2>
+<h3 id="준비">준비</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ sudo add-apt-repository universe
+$ sudo add-apt-repository multiverse
+$ sudo apt update
+$ sudo apt upgrade
+$ sudo apt dist-upgrade
+$ sudo apt install build-essential dkms unzip wget
+$ sudo reboot
+</code></pre></div><h3 id="virtualbox-source-repo-추가">VirtualBox Source Repo 추가</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ sudo nano /etc/apt/sources.list
+$ deb http://download.virtualbox.org/virtualbox/debian <span style="color:#f92672">[</span>rel<span style="color:#f92672">]</span> contrib
+</code></pre></div><h3 id="gpg-키-추가">GPG 키 추가</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+$ sudo apt update
+</code></pre></div><h3 id="설치">설치</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ sudo apt install virtualbox
+</code></pre></div><h3 id="virtualbox-group-및-user-추가">VirtualBox Group 및 User 추가</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ sudo usermod -aG vboxusers vbox
+$ sudo passwd vbox
+</code></pre></div><h3 id="extension-pack-설치">Extension Pack 설치</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ wget https://download.virtualbox.org/virtualbox/5.2.30/Oracle_VM_VirtualBox_Extension_Pack-<span style="color:#f92672">[</span>version<span style="color:#f92672">]</span>.vbox-extpack
+$ sudo VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack-<span style="color:#f92672">[</span>version<span style="color:#f92672">]</span>.vbox-extpack
+</code></pre></div><h3 id="vboxdrv-및-vboxweb-service-설치">vboxdrv 및 vboxweb-service 설치</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ cd /etc/init.d/
+
+services<span style="color:#f92672">=(</span>vboxautostart-service vboxweb-service vboxballoonctrl-service<span style="color:#f92672">)</span>
+base_url<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://www.virtualbox.org/svn/vbox/trunk/src/VBox/Installer/linux&#34;</span>
+<span style="color:#66d9ef">for</span> service in <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>services[@]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+    <span style="color:#66d9ef">do</span>
+      sudo wget <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>base_url<span style="color:#e6db74">}</span><span style="color:#e6db74">/</span><span style="color:#e6db74">${</span>service<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>.sh -O <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>service<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>      <span style="color:#f92672">&amp;&amp;</span> sudo chmod +x <span style="color:#e6db74">&#34;</span>$service<span style="color:#e6db74">&#34;</span>  <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>      <span style="color:#f92672">&amp;&amp;</span> sudo update-rc.d <span style="color:#e6db74">&#34;</span>$service<span style="color:#e6db74">&#34;</span> defaults <span style="color:#ae81ff">90</span> <span style="color:#ae81ff">10</span>
+    <span style="color:#66d9ef">done</span>
+	
+</code></pre></div><h2 id="2-phpvirtualbox-설치">2. phpVirtualBox 설치</h2>
+<h3 id="필수-패키지-설치">필수 패키지 설치</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ sudo apt install apache2 php php-mysql libapache2-mod-php php-soap php-xml
+</code></pre></div><h3 id="phpvirtualbox-설치">phpVirtualBox 설치</h3>
+<blockquote>
+<p>반듯이 git에서 땡겨야 함. 현재 최신 릴리즈가 5.2인데 5.2에서는 virtualbox 6.1에 대한 soap 이 정의 되어 있지 않음.</p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ git clone https://github.com/phpvirtualbox
+$ sudo mv phpvirtualbox /var/www/html/
+$ sudo chmod <span style="color:#ae81ff">777</span> /var/www/html/phpvirtualbox
+</code></pre></div><h3 id="config">config</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ sudo cp /var/www/html/phpvirtualbox/config.php-example /var/www/html/phpvirtualbox/config.php
+</code></pre></div><h3 id="configphp-파일-수정">config.php 파일 수정</h3>
+<p>위에서 생성한 vbox 계정에 대한 정보 입력</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">var $username <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;vbox&#39;</span>;
+var $password <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;password&#39;</span>;
+</code></pre></div><h3 id="etcdefaultvirtualbox-수정">/etc/default/virtualbox 수정</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">VBOXUSER<span style="color:#f92672">=</span>vbox
+VBOXWEB_USER<span style="color:#f92672">=</span>vbox
+VBOXWEB_HOST<span style="color:#f92672">=</span>127.0.0.1
+VBOXWEB_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">18083</span>
+</code></pre></div><h3 id="실행">실행</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo systemctl restart vboxweb-service
+sudo systemctl restart virtualbox
+sudo systemctl restart apache2
+</code></pre></div><h2 id="3-참고">3. 참고</h2>
+<h3 id="remote-desktop-사용">Remote Desktop 사용</h3>
+<p>VNC등을 통해 원격 스크린을 보고 싶은 경우, 기본적으로 Localbinding되기 때문에 외부에서 접근이 어렵다.
+아래의 명령어는 인터페이스로 Binding 하는 방법이다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ VBoxHeadless --startvm <span style="color:#e6db74">&#34;node-5&#34;</span> --vrde on --vrdeproperty <span style="color:#e6db74">&#34;TCP/Ports=9003&#34;</span> --vrdeproperty <span style="color:#e6db74">&#34;TCP/Address=10.1.1.61&#34;</span>
+</code></pre></div><h3 id="네트워크-관련">네트워크 관련</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ VBoxManage natnetwork add --netname natnet1 --network <span style="color:#e6db74">&#34;192.168.0.0/24&#34;</span> --enable --dhcp on
+$ VBoxManage natnetwork modify --netname natnet1 --port-forward-4 <span style="color:#e6db74">&#34;SSH:tcp:[10.1.1.62]:10022:[192.168.0.4]:22&#34;</span>
+$ VBoxManage natnetwork modify --netname natnet1 --port-forward-4 delete <span style="color:#e6db74">&#39;GIS-SSH&#39;</span>
+
+</code></pre></div><h2 id="4-troubleshooting">4. TroubleShooting</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ VBoxManage natnetwork stop --netname natnet1
+$ VBoxManage natnetwork start --netname natnet1
+</code></pre></div><h2 id="5-reference">5. Reference</h2>
+<p><a href="https://ostechnix.com/install-oracle-virtualbox-ubuntu-16-04-headless-server/">https://ostechnix.com</a><!-- raw HTML omitted -->
+<a href="https://technote.kr/213">https://technote.kr/213</a></p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/virtualbox/" rel="tag">virtualbox</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/phpvirtualbox/" rel="tag">phpvirtualbox</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 sacoku.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>
