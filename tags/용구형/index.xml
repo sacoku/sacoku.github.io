@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>용구형 on Sacoku Blog</title>
+    <link>http://sacoku.github.io/tags/%EC%9A%A9%EA%B5%AC%ED%98%95/</link>
+    <description>Recent content in 용구형 on Sacoku Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sat, 17 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://sacoku.github.io/tags/%EC%9A%A9%EA%B5%AC%ED%98%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>블로그 열었습니다.</title>
+      <link>http://sacoku.github.io/blog/first/</link>
+      <pubDate>Sat, 17 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://sacoku.github.io/blog/first/</guid>
+      <description>블로그를 다시 열었습니다. 기록을 위해서 여러번 열기는 했습니다만, 제대로 운영된 적이 없었죠.
+하지만 이번엔(?) 다릅니다! 개발 및 연구를 하며, 분산되어 저장 된 기록들이 찾아보기도 힘들었고 잊어먹기 일쑤였습니다.
+그나마 어릴땐 기억이라도 잘했는데 지금은 나이가 들어 기억도 힘드니 도구에 의존 할 수밖에 없네요.
+물론 자료를 공유할 목적이 있기도 하구요.
+ 위의 사진은 제가 아닙니다.
+ 우리 연구실의 @용구박사님이십니다. ^^
+그럼 기록을 자주 하는 것으로 하고 !</description>
+    </item>
+    
+  </channel>
+</rss>

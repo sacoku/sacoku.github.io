@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>first on Sacoku Blog</title>
+    <link>http://sacoku.github.io/tags/first/</link>
+    <description>Recent content in first on Sacoku Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sat, 17 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://sacoku.github.io/tags/first/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>용구형</title>
+      <link>http://sacoku.github.io/blog/first/</link>
+      <pubDate>Sat, 17 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://sacoku.github.io/blog/first/</guid>
+      <description>블로그 열었습니다.
+여러번 열기는 했습니다만,&amp;hellip; 이번엔 좀 제대로 해볼려구요. ^^ 기록도 많이 하고요&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>
