@@ -5,6 +5,16 @@
     <link>http://sacoku.github.io/categories/</link>
     <description>Recent content in Categories on Sacoku Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ko-kr</language><atom:link href="http://sacoku.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>ko-kr</language>
+    <lastBuildDate>Sat, 17 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://sacoku.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>blog</title>
+      <link>http://sacoku.github.io/categories/blog/</link>
+      <pubDate>Sat, 17 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://sacoku.github.io/categories/blog/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
