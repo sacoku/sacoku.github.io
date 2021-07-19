@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ambari on Sacoku Blog</title>
+    <link>http://sacoku.github.io/tags/ambari/</link>
+    <description>Recent content in ambari on Sacoku Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sat, 17 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://sacoku.github.io/tags/ambari/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ambari 설치-HDP 인증 이슈에 따르는...</title>
+      <link>http://sacoku.github.io/tech/210719-ambari-install/</link>
+      <pubDate>Sat, 17 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://sacoku.github.io/tech/210719-ambari-install/</guid>
+      <description>1. 개요 Cloudera에서 Hortonworks가 합병 된 후 2021-01부로
+2. 설치 준비 Hostname 설정  모든 노드에 대해서 호스트 네임을 정해준다.(/etc/hosts에 기록 됨)  [master node] $ hostnamectl set-hostname ambari-master [node01] $ hostnamectl set-hostname ambari-node01 [node02] $ hostnamectl set-hostname ambari-node02 /etc/hosts 작성 및 복사 $ vi /etc/hosts 10.2.2.100 ambari-master 10.2.2.101 ambari-node01 10.2.2.102 ambari-node02 scp /etc/hosts root@ambari-node01 scp /etc/hosts root@ambari-node02 ssh-keygen $ ssh-keygen Generating public/private rsa key pair. Enter file in which to save the key (/root/.</description>
+    </item>
+    
+  </channel>
+</rss>

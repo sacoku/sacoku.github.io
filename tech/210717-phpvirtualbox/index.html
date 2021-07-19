@@ -6,9 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>phpVirtualbox 구축 방법 - Sacoku Blog</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
-	<meta name="description" content="https://www.virtualbox.org/graphics/vbox_logo2_gradient.png">
+	<meta name="description" content="">
 		<meta property="og:title" content="phpVirtualbox 구축 방법" />
-<meta property="og:description" content="https://www.virtualbox.org/graphics/vbox_logo2_gradient.png" />
+<meta property="og:description" content="1. Virtualbox 설치 준비 $ sudo add-apt-repository universe $ sudo add-apt-repository multiverse $ sudo apt update $ sudo apt upgrade $ sudo apt dist-upgrade $ sudo apt install build-essential dkms unzip wget $ sudo reboot VirtualBox Source Repo 추가 $ sudo nano /etc/apt/sources.list $ deb http://download.virtualbox.org/virtualbox/debian [rel] contrib GPG 키 추가 $ wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add - $ sudo apt update 설치 $ sudo apt install virtualbox VirtualBox Group 및 User 추가 $ sudo usermod -aG vboxusers vbox $ sudo passwd vbox Extension Pack 설치 $ wget https://download." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://sacoku.github.io/tech/210717-phpvirtualbox/" /><meta property="article:section" content="tech" />
 <meta property="article:published_time" content="2021-07-17T00:00:00+00:00" />
@@ -16,13 +16,13 @@
 
 
 		<meta itemprop="name" content="phpVirtualbox 구축 방법">
-<meta itemprop="description" content="https://www.virtualbox.org/graphics/vbox_logo2_gradient.png"><meta itemprop="datePublished" content="2021-07-17T00:00:00+00:00" />
+<meta itemprop="description" content="1. Virtualbox 설치 준비 $ sudo add-apt-repository universe $ sudo add-apt-repository multiverse $ sudo apt update $ sudo apt upgrade $ sudo apt dist-upgrade $ sudo apt install build-essential dkms unzip wget $ sudo reboot VirtualBox Source Repo 추가 $ sudo nano /etc/apt/sources.list $ deb http://download.virtualbox.org/virtualbox/debian [rel] contrib GPG 키 추가 $ wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add - $ sudo apt update 설치 $ sudo apt install virtualbox VirtualBox Group 및 User 추가 $ sudo usermod -aG vboxusers vbox $ sudo passwd vbox Extension Pack 설치 $ wget https://download."><meta itemprop="datePublished" content="2021-07-17T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-17T00:00:00+00:00" />
 <meta itemprop="wordCount" content="308">
 <meta itemprop="keywords" content="virtualbox,phpvirtualbox," />
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="phpVirtualbox 구축 방법"/>
-<meta name="twitter:description" content="https://www.virtualbox.org/graphics/vbox_logo2_gradient.png"/>
+<meta name="twitter:description" content="1. Virtualbox 설치 준비 $ sudo add-apt-repository universe $ sudo add-apt-repository multiverse $ sudo apt update $ sudo apt upgrade $ sudo apt dist-upgrade $ sudo apt install build-essential dkms unzip wget $ sudo reboot VirtualBox Source Repo 추가 $ sudo nano /etc/apt/sources.list $ deb http://download.virtualbox.org/virtualbox/debian [rel] contrib GPG 키 추가 $ wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add - $ sudo apt update 설치 $ sudo apt install virtualbox VirtualBox Group 및 User 추가 $ sudo usermod -aG vboxusers vbox $ sudo passwd vbox Extension Pack 설치 $ wget https://download."/>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -69,7 +69,7 @@
 </div></div>
 		</header>
 		<figure class="post__thumbnail">
-			<img src="https://www.virtualbox.org/graphics/vbox_logo2_gradient.png" alt="phpVirtualbox 구축 방법">
+			<img src="https://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/f2e3e7b6-c53b-4457-85e9-49625315791a/Image/7359d6ab3d696dbcd287fd792a82eacd/oracle_vm_virtualbox_red_logo.png" alt="phpVirtualbox 구축 방법">
 		</figure>
 <div class="post__toc toc">
 	<div class="toc__title">Page content</div>
@@ -205,6 +205,37 @@ $ VBoxManage natnetwork start --netname natnet1
 </main>
 
 
+<nav class="pager flex">
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/tech/210717-make-hugo-blog/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Hugo 블로그 구축 방법</p>
+		</a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sacoku" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
 
 
 			</div>

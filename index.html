@@ -56,8 +56,63 @@
 <main class="main list" role="main">
 	<article class="list__item post">
 	<figure class="list__thumbnail">
+		<a href="http://sacoku.github.io/tech/210719-ambari-install/">
+			<img src="http://guruble.com/wp-content/uploads/2014/03/apache-ambari-720x340.png" alt="Ambari 설치-HDP 인증 이슈에 따르는..." />
+		</a>
+	</figure>
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/tech/210719-ambari-install/" rel="bookmark">
+			Ambari 설치-HDP 인증 이슈에 따르는...
+			</a>
+		</h2>
+		<div class="list__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">Sunghyun Kim</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-07-17T00:00:00Z">2021-07-17</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/tech/bigdata/hadoop/" rel="category">tech/bigdata/hadoop</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		1. 개요 Cloudera에서 Hortonworks가 합병 된 후 2021-01부로
+2. 설치 준비 Hostname 설정  모든 노드에 대해서 호스트 네임을 정해준다.(/etc/hosts에 기록 됨)  [master node] $ hostnamectl set-hostname ambari-master [node01] $ hostnamectl set-hostname ambari-node01 [node02] $ hostnamectl set-hostname ambari-node02 /etc/hosts 작성 및 복사 $ vi /etc/hosts 10.2.2.100 ambari-master 10.2.2.101 ambari-node01 10.2.2.102 ambari-node02 scp /etc/hosts root@ambari-node01 scp /etc/hosts root@ambari-node02 ssh-keygen $ ssh-keygen Generating public/private rsa key pair. Enter file in which to save the key (/root/.
+	</div>
+	<div class="list__footer clearfix">
+		<a class="list__footer-readmore btn" href="/tech/210719-ambari-install/">Read more…</a>
+	</div>
+</article><article class="list__item post">
+	<figure class="list__thumbnail">
+		<a href="http://sacoku.github.io/tech/210717-make-hugo-blog/">
+			<img src="https://d33wubrfki0l68.cloudfront.net/c38c7334cc3f23585738e40334284fddcaf03d5e/2e17c/images/hugo-logo-wide.svg" alt="Hugo 블로그 구축 방법" />
+		</a>
+	</figure>
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/tech/210717-make-hugo-blog/" rel="bookmark">
+			Hugo 블로그 구축 방법
+			</a>
+		</h2>
+		<div class="list__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">Sunghyun Kim</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-07-17T00:00:00Z">2021-07-17</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/tech/hugo/" rel="category">tech/hugo</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		1. 계기 여러 블로그를 만들기도 했었고 Facebook, Instagram 등 다양한 SNS 플랫폼을 이용했었지만, 대부분 readonly 였고 내 자신이 게시물을 작성하고, 블로그를 운영하지는 않았었다.
+가장 최근에 구축했던 블로그는 Jekyll 였었는데 다른 블로그들과 마찬가지로 만들기에 그쳤을뿐, 잘 활용하지는 못했었던 것 같다.
+IT업에 종사를 하다 보니, 실험?(TEST)를 진행 할일이 참 많다. 하지만 그 실험을 진행하는 그 시점에서 이해하던 것들이 시간이 지나면 결국 머리에서 사라지고 시간이 좀 흐른 후 동일한 짓을 매번 반복하고 있는 나를 매번 발견한다.
+	</div>
+	<div class="list__footer clearfix">
+		<a class="list__footer-readmore btn" href="/tech/210717-make-hugo-blog/">Read more…</a>
+	</div>
+</article><article class="list__item post">
+	<figure class="list__thumbnail">
 		<a href="http://sacoku.github.io/tech/210717-phpvirtualbox/">
-			<img src="https://www.virtualbox.org/graphics/vbox_logo2_gradient.png" alt="phpVirtualbox 구축 방법" />
+			<img src="https://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/f2e3e7b6-c53b-4457-85e9-49625315791a/Image/7359d6ab3d696dbcd287fd792a82eacd/oracle_vm_virtualbox_red_logo.png" alt="phpVirtualbox 구축 방법" />
 		</a>
 	</figure>
 	<header class="list__header">
@@ -76,6 +131,9 @@
 	</header>
 	<div class="content list__excerpt post__content clearfix">
 		1. Virtualbox 설치 준비 $ sudo add-apt-repository universe $ sudo add-apt-repository multiverse $ sudo apt update $ sudo apt upgrade $ sudo apt dist-upgrade $ sudo apt install build-essential dkms unzip wget $ sudo reboot VirtualBox Source Repo 추가 $ sudo nano /etc/apt/sources.list $ deb http://download.virtualbox.org/virtualbox/debian [rel] contrib GPG 키 추가 $ wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add - $ sudo apt update 설치 $ sudo apt install virtualbox VirtualBox Group 및 User 추가 $ sudo usermod -aG vboxusers vbox $ sudo passwd vbox Extension Pack 설치 $ wget https://download.
+	</div>
+	<div class="list__footer clearfix">
+		<a class="list__footer-readmore btn" href="/tech/210717-phpvirtualbox/">Read more…</a>
 	</div>
 </article><article class="list__item post">
 	<figure class="list__thumbnail">
@@ -125,6 +183,8 @@
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/tech/210719-ambari-install/">Ambari 설치-HDP 인증 이슈에 따르는...</a></li>
+			<li class="widget__item"><a class="widget__link" href="/tech/210717-make-hugo-blog/">Hugo 블로그 구축 방법</a></li>
 			<li class="widget__item"><a class="widget__link" href="/tech/210717-phpvirtualbox/">phpVirtualbox 구축 방법</a></li>
 			<li class="widget__item"><a class="widget__link" href="/blog/first/">블로그 열었습니다.</a></li>
 		</ul>
@@ -139,6 +199,14 @@
 				<span class="widget__counter widget__counter--bubble">1</span>
 				</li>
 			<li class="widget__item">
+				<a class="widget__link" href="/categories/tech/bigdata/hadoop/">tech/bigdata/hadoop</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/tech/hugo/">tech/hugo</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
 				<a class="widget__link" href="/categories/tech/infra/">tech/infra</a>&nbsp;
 				<span class="widget__counter widget__counter--bubble">1</span>
 				</li>
@@ -148,6 +216,9 @@
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/ambari/" title="ambari">ambari (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hadoop/" title="hadoop">hadoop (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="hugo">hugo (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/phpvirtualbox/" title="phpvirtualbox">phpvirtualbox (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/virtualbox/" title="virtualbox">virtualbox (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%9A%A9%EA%B5%AC%ED%98%95/" title="용구형">용구형 (1)</a>

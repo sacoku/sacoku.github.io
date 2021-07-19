@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on Sacoku Blog</title>
+    <link>http://sacoku.github.io/tags/hugo/</link>
+    <description>Recent content in hugo on Sacoku Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sat, 17 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://sacoku.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo 블로그 구축 방법</title>
+      <link>http://sacoku.github.io/tech/210717-make-hugo-blog/</link>
+      <pubDate>Sat, 17 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://sacoku.github.io/tech/210717-make-hugo-blog/</guid>
+      <description>1. 계기 여러 블로그를 만들기도 했었고 Facebook, Instagram 등 다양한 SNS 플랫폼을 이용했었지만, 대부분 readonly 였고 내 자신이 게시물을 작성하고, 블로그를 운영하지는 않았었다.
+가장 최근에 구축했던 블로그는 Jekyll 였었는데 다른 블로그들과 마찬가지로 만들기에 그쳤을뿐, 잘 활용하지는 못했었던 것 같다.
+IT업에 종사를 하다 보니, 실험?(TEST)를 진행 할일이 참 많다. 하지만 그 실험을 진행하는 그 시점에서 이해하던 것들이 시간이 지나면 결국 머리에서 사라지고 시간이 좀 흐른 후 동일한 짓을 매번 반복하고 있는 나를 매번 발견한다.</description>
+    </item>
+    
+  </channel>
+</rss>

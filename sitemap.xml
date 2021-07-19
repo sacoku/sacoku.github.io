@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://sacoku.github.io/tags/ambari/</loc>
+    <lastmod>2021-07-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://sacoku.github.io/tech/210719-ambari-install/</loc>
+    <lastmod>2021-07-17T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://sacoku.github.io/categories/blog/</loc>
     <lastmod>2021-07-17T00:00:00+00:00</lastmod>
   </url><url>
@@ -9,6 +15,15 @@
     <lastmod>2021-07-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://sacoku.github.io/categories/</loc>
+    <lastmod>2021-07-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://sacoku.github.io/tags/hadoop/</loc>
+    <lastmod>2021-07-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://sacoku.github.io/tags/hugo/</loc>
+    <lastmod>2021-07-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://sacoku.github.io/tech/210717-make-hugo-blog/</loc>
     <lastmod>2021-07-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://sacoku.github.io/tags/phpvirtualbox/</loc>
@@ -34,6 +49,10 @@
   </url><url>
     <loc>http://sacoku.github.io/tags/%EC%9A%A9%EA%B5%AC%ED%98%95/</loc>
     <lastmod>2021-07-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://sacoku.github.io/categories/tech/bigdata/hadoop/</loc>
+  </url><url>
+    <loc>http://sacoku.github.io/categories/tech/hugo/</loc>
   </url><url>
     <loc>http://sacoku.github.io/categories/tech/infra/</loc>
   </url>
